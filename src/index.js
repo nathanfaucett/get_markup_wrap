@@ -64,7 +64,10 @@ var dummyNode = supports.dom ? environment.document.createElement("div") : null,
     };
 
 
-module.exports = function getMarkupWrap(nodeName) {
+module.exports = getMarkupWrap;
+
+
+function getMarkupWrap(nodeName) {
     if (dummyNode) {
         if (!has(markupWrap, nodeName)) {
             nodeName = "*";
@@ -83,4 +86,4 @@ module.exports = function getMarkupWrap(nodeName) {
     } else {
         throw new Error("Markup wrapping node not initialized");
     }
-};
+}
