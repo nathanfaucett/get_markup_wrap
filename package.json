@@ -7,6 +7,12 @@
     "url": "https://github.com/nathanfaucett/get_markup_wrap.git"
   },
   "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+  },
   "keywords": [
     "get_markup_wrap",
     "get_markup_wrap.js"
@@ -16,14 +22,15 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jsbeautifier": "^0.2.7",
-    "mocha": "^2.1.0",
-    "zombie": "^2.5.1"
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-jsbeautifier": "^0.2.10",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0",
+    "zuul": "^3.6.0"
   },
   "dependencies": {
-    "environment": "git://github.com/nathanfaucett/environment",
-    "has": "git://github.com/nathanfaucett/has",
-    "supports": "git://github.com/nathanfaucett/supports"
+    "environment": "git://github.com/nathanfaucett/environment.git",
+    "has": "git://github.com/nathanfaucett/has.git",
+    "supports": "git://github.com/nathanfaucett/supports.git"
   }
 }
