@@ -1,6 +1,6 @@
-var has = require("has"),
-    supports = require("supports"),
-    environment = require("environment");
+var has = require("@nathanfaucett/has"),
+    supports = require("@nathanfaucett/supports"),
+    environment = require("@nathanfaucett/environment");
 
 
 var dummyNode = supports.dom ? environment.document.createElement("div") : null,

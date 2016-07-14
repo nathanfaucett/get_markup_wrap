@@ -1,5 +1,5 @@
 var tape = require("tape"),
-    environment = require("environment"),
+    environment = require("@nathanfaucett/environment"),
     getMarkupWrap = require("..");
 
 
