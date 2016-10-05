@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/get_markup_wrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "get markup wrap for the browser and node.js",
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "zuul": "^3.6.0"
   },
   "dependencies": {
-    "@nathanfaucett/environment": "^0.0.1",
-    "@nathanfaucett/has": "^0.0.1",
-    "@nathanfaucett/supports": "^0.0.1"
+    "@nathanfaucett/environment": "^0.0.2",
+    "@nathanfaucett/has": "^0.0.2",
+    "@nathanfaucett/supports": "^0.0.2"
   }
 }
